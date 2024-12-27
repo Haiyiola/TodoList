@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Todo App</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="./images/bg-desktop-light.jpg" alt="bgimage" class="bgimage">
+            <div>
+                <h1>TODO</h1>
+                <img src="./images/icon-moon.svg" alt="moon" id="moon">
+            </div>
+            <input type="text" placeholder="Create a new todo..." class="input">
+        </header>
+        <article>
+            <div>
+                <input type="checkbox"  name=javascript id="tasks">
+                <label for="JavaScript" name="JavaScript">Complete online JavaScript Course</label>
+            </div>
+            <div>
+                <input type="checkbox" name="jog" id="tasks">
+                <label for="jog" name="jog">Jog around the park 3x</label>
+            </div>
+            <div>
+                <input type="checkbox" name="meditation" id="tasks">
+                <label for="meditation" name="meditation">10 minutes meditation</label>
+            </div>
+            <div>
+                <input type="checkbox" name="read" id="tasks">
+                <label for="read" name="read">Read for 1 hour</label>
+            </div>
+            <div>
+                <input type="checkbox" name="groceries" id="tasks">
+                <label for="groceries" name="groceries">Pick up groceries</label>
+            </div>
+            <div>
+                <input type="checkbox" name="completeTodo" id="tasks">
+                <label for="completeTodo" name="completeTodo">Complete Todo App on Frontend Mentor</label>
+            </div>
+        </article>
+        <footer>
+            <p><span>5</span> items left</p>
+            <div>
+                <p>All</p>
+                <p>Active</p>
+                <p>Completed</p>
+            </div>
+            <p>Clear Completed</p>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
