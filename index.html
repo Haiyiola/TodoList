@@ -9,49 +9,49 @@
 </head>
 <body>
     <main>
+        <img src="./images/bg-desktop-light.jpg" alt="bgimage" class="bgimage">
         <header>
-            <img src="./images/bg-desktop-light.jpg" alt="bgimage" class="bgimage">
-            <div>
+            <div class="title">
                 <h1>TODO</h1>
                 <img src="./images/icon-moon.svg" alt="moon" id="moon">
             </div>
-            <input type="text" placeholder="Create a new todo..." class="input">
+            <input type="text" placeholder="Create a new todo..." class="input-task">
         </header>
         <article>
-            <div>
-                <input type="checkbox"  name=javascript id="tasks">
+            <div class="lists">
+                <input type="radio"  name=javascript class="tasks">
                 <label for="JavaScript" name="JavaScript">Complete online JavaScript Course</label>
             </div>
-            <div>
-                <input type="checkbox" name="jog" id="tasks">
+            <div class="lists">
+                <input type="radio" name="jog" class="tasks">
                 <label for="jog" name="jog">Jog around the park 3x</label>
             </div>
-            <div>
-                <input type="checkbox" name="meditation" id="tasks">
+            <div class="lists">
+                <input type="radio" name="meditation" class="tasks">
                 <label for="meditation" name="meditation">10 minutes meditation</label>
             </div>
-            <div>
-                <input type="checkbox" name="read" id="tasks">
+            <div class="lists">
+                <input type="radio" name="read" class="tasks">
                 <label for="read" name="read">Read for 1 hour</label>
             </div>
-            <div>
-                <input type="checkbox" name="groceries" id="tasks">
+            <div class="lists">
+                <input type="radio" name="groceries" class="tasks">
                 <label for="groceries" name="groceries">Pick up groceries</label>
             </div>
-            <div>
-                <input type="checkbox" name="completeTodo" id="tasks">
+            <div class="lists">
+                <input type="radio" name="completeTodo" class="tasks">
                 <label for="completeTodo" name="completeTodo">Complete Todo App on Frontend Mentor</label>
             </div>
+            <footer>
+                <p><span>5</span> items left</p>
+                <div class="task-display">
+                    <p>All</p>
+                    <p>Active</p>
+                    <p>Completed</p>
+                </div>
+                <p>Clear Completed</p>
+            </footer>
         </article>
-        <footer>
-            <p><span>5</span> items left</p>
-            <div>
-                <p>All</p>
-                <p>Active</p>
-                <p>Completed</p>
-            </div>
-            <p>Clear Completed</p>
-        </footer>
     </main>
     <script src="index.js"></script>
 </body>
