@@ -35,6 +35,10 @@ const article = document.getElementById("article")
 const inputtaskSection = document.getElementById("input-task-section")
 const Lists = document.getElementsByClassName("lists")
 const body = document.getElementById("body")
+const lightBg = document.getElementById("lightbg")
+const darkBg = document.getElementById("darkbg")
+
+
 
 moon.addEventListener("click", function(){
     moon.style.display= "none"
@@ -45,6 +49,8 @@ moon.addEventListener("click", function(){
     inputtaskSection.style.backgroundColor = "#1f202b"
     Lists.style.backgroundColor = "#1f202b"
     body.style.backgroundColor = "#1f202b"
+    lightBg.style.display = "none"
+    darkBg.style.display ="block"
 })
 
 sun.addEventListener("click", function(){
@@ -56,6 +62,8 @@ sun.addEventListener("click", function(){
     inputtaskSection.style.backgroundColor = "white"
     Lists.style.backgroundColor = "white"
     body.style.backgroundColor = "white"
+    lightBg.style.display = "block"
+    darkBg.style.display = "none"
 })
 // inputTask.addEventListener("click", function(){
 //     inputTask.innerHTML = <input placeholder="Currently Typing"/>

@@ -27,8 +27,12 @@ main{
     width: 800px;
 }
 .bgimage{
+    /* display: block; */
     width: 1300px;
     height: 250px;
+}
+#dark-bg{
+    display: none;
 }
 header{
     width: 500px;
@@ -69,17 +73,13 @@ h1{
 }
 input{
     outline-style: none;
-    /* width: 460px;
-    height: 40px; */
     font-weight: 15px;
+    color: var(--grey);
     cursor: pointer;
     border: none;
-}
-.input-task[type="text"]{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 15px;
-    color: var(--grey);
 }
 
 h5{
