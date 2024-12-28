@@ -14,42 +14,46 @@
             <div class="title">
                 <h1>TODO</h1>
                 <img src="./images/icon-moon.svg" alt="moon" id="moon">
+                <img src="./images/icon-sun.svg" alt="sun" id="sun">
             </div>
-            <input type="text" placeholder="Create a new todo..." class="input-task">
+            <div class="input-task">
+                <p class="radiosample"></p>
+                <input type="text" placeholder="Create a new todo..." class="input" id="input-task">
+            </div>    
         </header>
         <article>
-            <div class="lists">
-                <input type="radio"  name=javascript class="tasks">
-                <label for="JavaScript" name="JavaScript">Complete online JavaScript Course</label>
+            <div class="lists" id="javascriptSection">
+                <span class="radiosample tasks" id="javascript"> <img src="./images/icon-check.svg" alt="check" class="check" id="javascriptcheck"></span>
+                <h5 id="javascript2">Complete online JavaScript Course</h5>
             </div>
-            <div class="lists">
-                <input type="radio" name="jog" class="tasks">
-                <label for="jog" name="jog">Jog around the park 3x</label>
+            <div class="lists" id="jogSection">
+                <span class="radiosample tasks" id="jog"> <img src="./images/icon-check.svg" alt="check" class="check" id="jogcheck"> </span>
+                <h5 id="jog2">Jog around the park 3x</h5>
             </div>
-            <div class="lists">
-                <input type="radio" name="meditation" class="tasks">
-                <label for="meditation" name="meditation">10 minutes meditation</label>
+            <div class="lists" id="meditationSection">
+                <span class="radiosample tasks" id="meditation"> <img src="./images/icon-check.svg" alt="check" class="check" id="meditationcheck"> </span>
+                <h5 id="meditation2">10 minutes meditation</h5>
             </div>
-            <div class="lists">
-                <input type="radio" name="read" class="tasks">
-                <label for="read" name="read">Read for 1 hour</label>
+            <div class="lists" id="readSection">
+                <span class="radiosample tasks" id="read"> <img src="./images/icon-check.svg" alt="check" class="check" id="readcheck"> </span>
+                <h5 id="read2">Read </h5>
             </div>
-            <div class="lists">
-                <input type="radio" name="groceries" class="tasks">
-                <label for="groceries" name="groceries">Pick up groceries</label>
+            <div class="lists" id="groceriesSection">
+                <span class="radiosample tasks" id="groceries"> <img src="./images/icon-check.svg" alt="check" class="check" id="groceriescheck"> </span>
+                <h5 id="groceries2">Pick up groceries</h5>
             </div>
-            <div class="lists">
-                <input type="radio" name="completeTodo" class="tasks">
-                <label for="completeTodo" name="completeTodo">Complete Todo App on Frontend Mentor</label>
+            <div class="lists" id="completedSection">
+                <span class="radiosample tasks" id="completed"><img src="./images/icon-check.svg" alt="check" class="check" id="completedcheck"></span>
+                <h5 id="completed2">Complete Todo App on Frontend Mentor</h5>
             </div>
             <footer>
-                <p><span>5</span> items left</p>
+                <p class="footnote"><span>5</span> items left</p>
                 <div class="task-display">
-                    <p>All</p>
-                    <p>Active</p>
-                    <p>Completed</p>
+                    <a href="#">All</a>
+                    <a href="#">Active</a>
+                    <a href="#">Completed</a>
                 </div>
-                <p>Clear Completed</p>
+                <p class="footnote">Clear Completed</p>
             </footer>
         </article>
     </main>
