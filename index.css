@@ -83,13 +83,13 @@ input{
 }
 
 h5{
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     font-weight: 500;
 }
 article{
-    padding: 10px 25px;
-    width: 450px;
+    /* padding: 10px 25px; */
+    width: 500px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -98,36 +98,49 @@ article{
     border-radius: 7px;
 }
 .lists{
+    margin: 0px 20px;
+    padding: 8px 5px;
     display: flex;
     flex-direction: row;
-    padding: 8px 5px;
+    justify-content: space-between;
     line-height: 35px;
-    gap: 15px;
     border-bottom: 1px solid #9394a9;
     cursor: pointer;
     align-items: center;
 }
+
+.sub-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
 .radiosample{
-    width: 25px;
-    height: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 22px;
+    height: 22px;
     border: 1px solid var(--grey);
     border-radius: 50%;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-}
+    }
 .check{
-    width: 17px;
-    height: 15px;
-    place-self: center;
-    padding: 3px;
-    /* filter: drop-shadow(1px 1px 3px black); */
-    background-color: linear-gradient(90deg, #57ddff, #c058f3);
-}
-.tasks{
+    display: none;
+    width: 14px;
+    height: 12px;
+    background-image: var(--linear);
+    padding: 5px 4px;
     border-radius: 50%;
+    cursor: pointer;
+}
+.cross{
+    display: none;
+    width: 15px;
+    justify-self: flex-end;
+    margin-right: 10px;
 }
 footer{
+    margin: 0px 15px;
     padding: 8px 10px;
     display: flex;
     flex-direction: row;
@@ -156,6 +169,6 @@ footer{
 .task-display a:hover{
     color: black;
 }
-/* .task-display a{
-    color: black;
+/* .task-display a:visited{
+    background-image: var(--linear);
 } */
