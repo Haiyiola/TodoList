@@ -31,15 +31,31 @@ const meditationSection = document.getElementById("meditationSection")
 const readSection = document.getElementById("readSection")
 const groceriesSection = document.getElementById("groceriesSection")
 const completedSection = document.getElementById("completedSection")
+const article = document.getElementById("article")
+const inputtaskSection = document.getElementById("input-task-section")
+const Lists = document.getElementsByClassName("lists")
+const body = document.getElementById("body")
 
 moon.addEventListener("click", function(){
     moon.style.display= "none"
     sun.style.display ="block"
+    article.style.backgroundColor = "#1f202b"
+    article.style.color = "white"
+    inputTask.style.backgroundColor = "#1f202b"
+    inputtaskSection.style.backgroundColor = "#1f202b"
+    Lists.style.backgroundColor = "#1f202b"
+    body.style.backgroundColor = "#1f202b"
 })
 
 sun.addEventListener("click", function(){
     sun.style.display ="none"
     moon.style.display = "block"
+    article.style.backgroundColor = "white"
+    article.style.color = "black"
+    inputTask.style.backgroundColor = "white"
+    inputtaskSection.style.backgroundColor = "white"
+    Lists.style.backgroundColor = "white"
+    body.style.backgroundColor = "white"
 })
 // inputTask.addEventListener("click", function(){
 //     inputTask.innerHTML = <input placeholder="Currently Typing"/>
@@ -151,3 +167,21 @@ groceriesCross.addEventListener("click", function(){
 completedCross.addEventListener("click", function(){
     completedSection.style.display = "none"
 })
+
+
+
+
+// let newSection = document.getElementById("newSection")
+// let newsection1Span = document.getElementById("newsection1-span")
+// let newsection1Check = document.getElementById("newsection1-check")
+// let newsection1 = document.getElementById("newsection1")
+// let newsection1Cross = document.getElementById("newsection1-cross")
+
+// newSection = inputTask.value
+
+// let newSection2 = document.getElementById("newSection2")
+// let newsection2Span = document.getElementById("newsection2-span")
+// let newsection2Check = document.getElementById("newsection2-check")
+// let newsection2 = document.getElementById("newsection2")
+// let newsection2Cross = document.getElementById("newsection2-cross")
+
