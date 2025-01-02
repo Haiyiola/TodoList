@@ -21,16 +21,20 @@
             <div class="input-task" id="input-task-section">
                 <p class="radiosample"></p>
                 <input type="text" placeholder="Create a new todo..." class="input" id="input-task">
+                <button type="submit" id="add-task">Add task</button>
             </div>    
         </header>
         <article id="article">
-            <div class="lists" id="javascriptSection">
-                <div class="sub-list">
-                    <span class="radiosample" id="javascript"> <img src="./images/icon-check.svg" alt="check" class="check" id="javascript-check"></span>
-                    <h5 id="javascript2">Complete online JavaScript Course</h5> 
+            <div id="task-list">
+                <div class="lists" id="javascriptSection">
+                    <div class="sub-list">
+                        <span class="radiosample" id="javascript"> <img src="./images/icon-check.svg" alt="check" class="check" id="javascript-check"></span>
+                        <h5 id="javascript2">Complete online JavaScript Course</h5> 
+                    </div>
+                    <img src="./images/icon-cross.svg" alt="cross" class="cross" id="javascript-cross">
                 </div>
-                <img src="./images/icon-cross.svg" alt="cross" class="cross" id="javascript-cross">
             </div>
+            <div id="new-task"></div>
             <div class="lists" id="jogSection">
                 <div class="sub-list">
                     <span class="radiosample" id="jog"> <img src="./images/icon-check.svg" alt="check" class="check" id="jog-check"> </span>
@@ -91,6 +95,7 @@
             </footer>
         </article>
     </main>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="index1.js"></script>
 </body>
 </html>
