@@ -1,13 +1,13 @@
 const moon = document.getElementById("moon")
 const sun = document.getElementById("sun")
 const inputTask =  document.getElementById("input-task")
-const javascript = document.getElementById("javascript")
+const course = document.getElementById("course")
 const jog = document.getElementById("jog")
 const meditation = document.getElementById("meditation")
 const read = document.getElementById("read")
 const groceries = document.getElementById("groceries")
 const completed = document.getElementById("completed")
-const javascript2 = document.getElementById("javascript2")
+const course2 = document.getElementById("course2")
 const jog2 = document.getElementById("jog2")
 const meditation2 = document.getElementById("meditation2")
 const read2 = document.getElementById("read2")
@@ -25,7 +25,7 @@ const meditationCross = document.getElementById("meditation-cross")
 const readCross = document.getElementById("read-cross")
 const groceriesCross = document.getElementById("groceries-cross")
 const completedCross = document.getElementById("completed-cross")
-const javascriptSection = document.getElementById("javascriptSection")
+const courseSection = document.getElementById("courseSection")
 const jogSection = document.getElementById("jogSection")
 const meditationSection = document.getElementById("meditationSection")
 const readSection = document.getElementById("readSection")
@@ -68,19 +68,19 @@ sun.addEventListener("click", function(){
 // inputTask.addEventListener("click", function(){
 //     inputTask.innerHTML = <input placeholder="Currently Typing"/>
 // })
-javascript.addEventListener("click", function(){
-    // javascript.style.display= ""
-    javascriptCheck.style.display = "block"
-    javascript2.style.textDecoration= "line-through"
-    javascript2.style.color= "var(--grey)"
-    javascriptCross.style.display = "block"
+course.addEventListener("click", function(){
+    // course.style.display= ""
+    courseCheck.style.display = "block"
+    course2.style.textDecoration= "line-through"
+    course2.style.color= "var(--grey)"
+    courseCross.style.display = "block"
 })
 
-javascript.addEventListener("dblclick", function(){
-    javascriptCheck.style.display = "none"
-    javascript2.style.textDecoration= "none"
-    javascript2.style.color= "black"
-    javascriptCross.style.display = "none"
+course.addEventListener("dblclick", function(){
+    courseCheck.style.display = "none"
+    course2.style.textDecoration= "none"
+    course2.style.color= "black"
+    courseCross.style.display = "none"
 })
 
 jog.addEventListener("click", function(){
@@ -157,8 +157,8 @@ completed.addEventListener("dblclick", function(){
     completedCross.style.display = "none"
 })
 
-javascriptCross.addEventListener("click", function(){
-    javascriptSection.style.display = "none"
+courseCross.addEventListener("click", function(){
+    courseSection.style.display = "none"
 })
 jogCross.addEventListener("click", function(){
     jogSection.style.display = "none"
